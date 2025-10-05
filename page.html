@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Task Manager</title>
+  <link rel="stylesheet" href="colour.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 Student Task Manager</h1>
+
+    <div class="task-form">
+      <input type="text" id="title" placeholder="Task title" required />
+      <input type="date" id="deadline" required />
+      <textarea id="description" placeholder="Task description"></textarea>
+      <button id="addTask">Add Task</button>
+    </div>
+
+    <div class="controls">
+      <select id="filterStatus">
+        <option value="all">All Tasks</option>
+        <option value="Pending">Pending</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Completed">Completed</option>
+      </select>
+    </div>
+
+    <div class="progress-section">
+      <p id="progressText">0/0 tasks completed</p>
+      <div class="progress-bar">
+        <div id="progressFill"></div>
+      </div>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="simple.js"></script>
+</body>
+</html>

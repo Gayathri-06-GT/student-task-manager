@@ -1,0 +1,83 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f0f4f8;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #2b6cb0;
+}
+
+.task-form, .controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input, textarea, select, button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  flex: 1;
+}
+
+button {
+  background-color: #2b6cb0;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2c5282;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.task {
+  display: flex;
+  flex-direction: column;
+  background: #f9fafb;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border-left: 5px solid #ccc;
+}
+
+.task.Pending { border-left-color: #ed8936; }
+.task.In\ Progress { border-left-color: #ecc94b; }
+.task.Completed { border-left-color: #48bb78; }
+
+.task-actions {
+  display: flex;
+  gap: 5px;
+  margin-top: 8px;
+}
+
+.progress-bar {
+  background: #e2e8f0;
+  border-radius: 10px;
+  height: 20px;
+  overflow: hidden;
+}
+
+#progressFill {
+  background: #48bb78;
+  height: 100%;
+  width: 0%;
+  transition: width 0.3s;
+}
